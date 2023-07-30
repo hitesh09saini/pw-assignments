@@ -1,0 +1,29 @@
+1. Tags :
+      
+    Tags are the building blocks of markup languages like HTML. They are used to define the structure and formatting of elements on a web page. Tags are typically enclosed in angle brackets (< >) and come in pairs, consisting of an opening tag and a closing tag. The opening tag denotes the beginning of an element, while the closing tag indicates its end. For example, to create a paragraph in HTML.
+
+example:-
+ 
+ <P> I am happy </p>
+
+
+2. Elements:
+
+   An element is a complete set of tags and the content they enclose. It represents a specific piece of the webpage and is made up of an opening tag, the content, and a closing tag. Elements can be as simple as a paragraph, or they can be more complex, such as images, headings, lists, tables, etc. Each element has a specific purpose and semantic meaning. 
+
+ example:-
+
+<img src"example.png" alt="Example Image" >
+
+In this example, <img> is the image element. The src attribute specifies the image's source (file location), and the alt attribute provides alternative text for the image, which is useful for accessibility and SEO purposes.
+
+3. Attributes:-
+     Attributes provide additional information about an element and are added within the opening tag. They are used to modify an element's behavior, appearance, or provide extra data. Different elements support different attributes. For instance, the anchor <a> tag is commonly used to create hyperlinks and requires an href attribute to define the target URL.
+
+example:-
+
+<a href="https://www.example.com">Visit Example Website</a>
+
+In this example, the <a> tag is the anchor element, and the href attribute specifies the destination URL that the user will be taken to when they click on the link.
+
+   

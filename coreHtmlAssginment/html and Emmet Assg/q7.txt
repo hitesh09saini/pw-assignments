@@ -1,0 +1,42 @@
+Nesting in Emmet :-
+
+nesting operators are shorthand symbols used to create nested HTML or XML structures quickly and efficiently. They allow developers to represent parent-child relationships between elements in a concise manner. Nesting operators help simplify the writing of complex code structures with just a few characters, making it easier to understand and manage the code.
+
+The most commonly used nesting operator in Emmet is the > (child) operator. It represents the parent-child relationship between elements. When you use the > operator, the element to the left of the operator becomes the parent, and the element to the right becomes its child.
+
+ For example:-
+
+1.
+  ul>li
+
+expands to :-
+
+  <ul>
+    <li></li>
+  </ul>
+
+
+2.
+
+div+p+a
+
+expands to 
+
+<div></div>
+<p></p>
+<a></a>
+
+3.
+
+div>ul>li+li^+li
+
+expands to 
+
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+    <li></li>
+</div>
+

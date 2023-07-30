@@ -1,0 +1,18 @@
+1. Self Closing Tags:-
+
+self-closing tags, also known as void or empty tags, are a specific type of HTML tags that do not require a separate closing tag. They represent elements that do not contain any content or children. In HTML, self-closing tags are denoted by adding a forward slash (/) before the closing angle bracket (>). Self-closing tags are used for elements that are either empty by definition (e.g., <br>) or have attributes that provide all the necessary information (e.g., <img>).
+
+2. Meta Tags :-
+
+
+Meta tags are HTML elements used to provide metadata about a web page. They don't produce any visible content on the page but serve crucial roles for search engines, browsers, and other web services. Meta tags are placed within the <head> element of an HTML document.
+
+ some common uses of meta tags
+
+1 Character Encoding
+2 Viewport Configuration
+3 Page Description
+4 Page Title
+5 Keywords
+6 Author and Copyright
+7 Robots Directive

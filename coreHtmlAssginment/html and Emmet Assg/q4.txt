@@ -1,0 +1,30 @@
+1. <p> tag:
+
+   
+The <p> tag is used to define paragraphs in HTML. It represents a block of text or content that forms a distinct section or paragraph on a web page. When you want to display a continuous piece of text, you can wrap it within the opening and closing <p> tags. Browsers automatically add some vertical spacing before and after the paragraph to visually separate it from surrounding content.
+
+example:-
+
+<p>This is a paragraph. It represents a distinct block of text.</p>
+
+
+
+2. <img> tag:
+
+The <img> tag is used to embed images in an HTML document. It allows you to display images on your web page, and you can specify the image's source (URL or file path) using the src attribute. Additionally, the alt attribute provides alternative text that is displayed if the image fails to load or for users with accessibility needs.
+
+example :-
+
+<img src="example.jpg" alt="Example Image">
+
+
+3. <a> tag:
+
+   The <a> tag, also known as the anchor tag, is primarily used for creating hyperlinks on web pages. It allows you to link to another webpage, file, or resource on the internet. The destination URL is specified using the href attribute, which tells the browser where to navigate when the link is clicked.
+
+example:- 
+
+<a href="https://www.example.com">Visit Example Website</a>
+
+
+

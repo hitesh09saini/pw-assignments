@@ -1,0 +1,18 @@
+Emmet :- 
+
+Emmet is a powerful and efficient web development tool that allows developers to write HTML and CSS code more quickly and with less effort.
+
+
+advantages emmet offers :-
+
+
+1.Increased Productivity
+2.Abbreviated Syntax
+3.Dynamic Abbreviations
+4.Nesting and Grouping
+5.HTML and CSS Combos
+6.Support for Multiple IDEs and Editors
+7.Customization and Extensibility
+8.Cross-platform Compatibility
+9.Reduces Errors
+10.Saves Time and Effort
