@@ -1,0 +1,13 @@
+4.Q.
+
+1. Use Semantic HTML Elements:
+
+   Semantic HTML elements provide meaningful structure and context to web content, making it easier for assistive technologies and screen readers to understand the information presented. When creating web pages, use appropriate semantic elements such as <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer> to define the content's purpose and relationships. Additionally, use heading levels (<h1> to <h6>) to create a clear hierarchical structure for headings.
+
+2. Provide Alternative Text for Images: 
+
+      Images play a crucial role in web design, but they can be a barrier for users who rely on screen readers. Always include descriptive alternative text (alt text) for images using the alt attribute. Alt text should convey the content and purpose of the image, allowing users who can't see the image to understand its context. Avoid using empty alt attributes for decorative images; use an empty alt="" attribute in such cases to indicate that the image is purely decorative and should be skipped by screen readers.
+
+3. Ensure Keyboard Accessibility:
+
+       Keyboard accessibility is vital for users who cannot use a mouse or have difficulty using one. Make sure all interactive elements and navigation can be accessed and operated using the keyboard alone. This involves testing the website's functionality using the "tab" key to navigate through links, buttons, and form elements. Additionally, ensure that the "focused" state is visually distinguishable so that users can identify where they are on the page when using the keyboard.

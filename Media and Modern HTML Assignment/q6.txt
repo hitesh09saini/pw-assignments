@@ -1,0 +1,15 @@
+1. header:
+   the <header> element represents the introductory content at the beginning of a section or a page. It typically contains the page's logo, navigation menu, headings, or other introductory elements.
+
+2. nav:
+    The <nav> element represents a navigation menu or links to other pages or sections of the website.
+
+3. main:
+    The <main> element represents the main content of the page, excluding headers, footers, sidebars, and navigation.
+
+4. article:
+     The <article> element represents a self-contained piece of content that can be distributed and reused independently, such as a blog post, article, or news story.
+     
+5. footer:
+       The <footer> element represents the footer of a section or a page. It typically contains copyright information, contact details, site maps, or links to related pages.
+      

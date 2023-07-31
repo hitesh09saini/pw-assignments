@@ -1,0 +1,18 @@
+3.
+
+Assistive devices are technologies or tools that help individuals with disabilities access and interact with digital content and physical environments. These devices play a significant role in providing accessibility by compensating for impairments and enabling equal participation. 
+
+Web accessibility is essential because the internet has become a fundamental part of modern life, offering access to information, services, and opportunities.
+
+ some common types of assistive devices used to enhance accessibility:-
+
+1.  Screen Readers
+2.  Screen Magnifiers
+3.  Braille Displays
+4.  Alternative Keyboards
+5.  Switch Access Devices
+6.  Speech Recognition Software
+7.  Closed Captioning
+8.  Eye Tracking Devices
+9.  Reading Pens
+10. Assistive Listening Systems
