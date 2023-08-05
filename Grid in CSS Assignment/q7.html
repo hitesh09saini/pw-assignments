@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container {
+            padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "img1 img2 img3"
+    "img4 img2 img6"
+    "img4 img5 img6";
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+img{
+   
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.grid-item:nth-child(1) { grid-area: img1; }
+.grid-item:nth-child(2) { grid-area: img2; }
+.grid-item:nth-child(3) { grid-area: img3; }
+.grid-item:nth-child(4) { grid-area: img4; }
+.grid-item:nth-child(5) { grid-area: img5; }
+.grid-item:nth-child(6) { grid-area: img6; }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="grid-item" style="grid-area: img1;"><img src="https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?size=626&ext=jpg&ga=GA1.2.809941680.1683111540&semt=sph" alt="Image 1"></div>
+        <div class="grid-item" style="grid-area: img2;"><img src="https://img.freepik.com/free-photo/free-photo-happy-mothers-day-mom-child-love-background-wallpaper_1340-30788.jpg?size=626&ext=jpg&ga=GA1.2.809941680.1683111540&semt=sph" alt="Image 2"></div>
+        <div class="grid-item" style="grid-area: img3;"><img src="https://img.freepik.com/free-photo/bird-nest-with-green-yellow-eggs-it_1340-29310.jpg?size=626&ext=jpg&ga=GA1.2.809941680.1683111540&semt=sph" alt="Image 3"></div>
+        <div class="grid-item" style="grid-area: img4;"><img src="https://img.freepik.com/free-photo/free-photo-happy-mothers-day-mom-child-love-background-wallpaper_1340-30760.jpg?size=626&ext=jpg&ga=GA1.2.809941680.1683111540&semt=sph" alt="Image 4"></div>
+        <div class="grid-item" style="grid-area: img5;"><img src="https://img.freepik.com/free-photo/beautiful-scenery-pathway-forest-with-trees-covered-with-frost_181624-42376.jpg?size=626&ext=jpg&ga=GA1.2.809941680.1683111540&semt=sph" alt="Image 5"></div>
+        <div class="grid-item" style="grid-area: img6;"><img src="https://img.freepik.com/free-photo/free-photo-flowers-blossom-floral-bouquet-decoration-colorful-beautiful-background-garden-flowers-plant-pattern_1340-26141.jpg?size=626&ext=jpg&ga=GA1.2.809941680.1683111540&semt=sph" alt="Image 6"></div>
+      </div>
+      
+    
+</body>
+</html>

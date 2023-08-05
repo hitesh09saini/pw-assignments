@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: h1;  background-color: rgb(243, 129, 129); }
+.item2 { grid-area: h2;  background-color: rgb(243, 129, 129);}
+.item3 { grid-area: h3;  background-color: rgb(243, 129, 129);}
+.item4 { grid-area: h4;  background-color: rgb(243, 129, 129);}
+.item5 { grid-area: h5;  background-color: rgb(243, 129, 129);}
+.item6 { grid-area: h6;  background-color: rgb(243, 129, 129);}
+.item7 { grid-area: h7;  background-color: rgb(243, 129, 129);}
+.item8 { grid-area: h8;  background-color: rgb(243, 129, 129);}
+
+.m1 { grid-area: m1; background-color: rgb(81, 1, 112);}
+.m2 { grid-area: m2; background-color: rgb(69, 167, 162);}
+.m3 { grid-area: m3; background-color: rgb(69, 167, 162);}
+.m4 { grid-area: m4; background-color: rgb(69, 167, 162);}
+.m5 { grid-area: m5;  background-color: rgb(69, 167, 162);}
+.m6 { grid-area: m6; background-color: rgb(245, 209, 7);}
+.m7 { grid-area: m7; background-color: rgb(195, 196, 196);}
+
+
+.t1 { grid-area: t1; background-color: rgb(81, 1, 112);}
+.t2 { grid-area: t2; background-color: rgb(195, 196, 196);}
+.t3 { grid-area: t3; background-color: rgb(69, 167, 162);}
+.t4 { grid-area: t4; background-color: rgb(69, 167, 162);}
+.t5 { grid-area: t5; background-color: rgb(69, 167, 162);}
+.t6 { grid-area: t6; background-color: rgb(69, 167, 162);}
+
+.w1 { grid-area: w1;background-color: rgb(81, 1, 112);}
+.w2 { grid-area: w2; background-color: rgb(69, 167, 162);}
+.w3 { grid-area: w3; background-color: rgb(69, 167, 162);}
+.w4 { grid-area: w4; background-color: rgb(69, 167, 162);}
+.w5 { grid-area: w5; background-color: rgb(69, 167, 162);}
+.w6 { grid-area: w6;  background-color: rgb(69, 167, 90);}
+
+.th1 { grid-area: th1; background-color: rgb(81, 1, 112);}
+.th2 { grid-area: th2; background-color: rgb(195, 196, 196);}
+.th3 { grid-area: th3; background-color: rgb(69, 167, 162);}
+.th4 { grid-area: th4;  background-color: rgb(69, 167, 162);}
+.th5 { grid-area: th5; background-color: rgb(69, 167, 162);}
+.th6 { grid-area: th6; background-color: rgb(69, 167, 162);}
+
+.f1 { grid-area: f1;  background-color: rgb(81, 1, 112);}
+.f2 { grid-area: f2; background-color: rgb(69, 167, 162);}
+.f3 { grid-area: f3; background-color: rgb(69, 167, 162);}
+.f4 { grid-area: f4; background-color: rgb(69, 167, 162);}
+.f5 { grid-area: f5; background-color: rgb(69, 167, 162);}
+.f6 { grid-area: f6; background-color: rgb(195, 196, 196); }
+
+.sat1 { grid-area: sat1; background-color: rgb(81, 1, 112); }
+.sat2 { grid-area: sat2; background-color: rgb(195, 196, 196);}
+.sat3 { grid-area: sat3; background-color: rgb(69, 167, 162);}
+.sat4 { grid-area: sat4; background-color: rgb(69, 167, 162);}
+.sat5 { grid-area: sat5; background-color: rgb(69, 167, 90); }
+
+
+
+.grid-container {
+  display: grid;
+  
+  grid-template-areas:
+    'h1 h2 h3 h4 h5 h6 h7 h8 '
+    'm1 m2 m3 m4 m5 m6 m7 m7'
+    't1 t2 t2 t3 t4 m6 t5 t6'
+    'w1 w2 w3 w4 w5 m6 w6 w6' 
+    'th1 th2 th2 th3 th4 m6 th5 th6' 
+    'f1 f2 f3 f4 f5 m6 f6 f6'
+    'sat1 sat2 sat2 sat3 sat4 m6 sat5 sat5';   
+    
+  /* gap: 10px; */
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > .i {
+
+   /* width: 200px; */
+  /* padding: 20px 0; */
+  border: 2px dotted black;
+  padding: 20px;
+  
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+
+.m6 p{
+  font-size: 2rem;
+}
+</style>
+</head>
+<body>
+
+<h1>School Time Table</h1>
+
+
+
+<div class="grid-container">
+  <div class="item1 i">Time</div>
+  <div class="item2 i">08:00AM-09:00AM</div>
+  <div class="item3 i">09:00AM-10:00AM</div>
+  <div class="item4 i">10:00AM-11:00AM</div>
+  <div class="item5 i">11:00AM-12:00AM</div>
+  <div class="item6 i">12:00AM-2:00AM</div>
+  <div class="item7 i">02:00AM-03:00AM</div>
+  <div class="item8 i">03:00AM-04:00AM</div>
+
+  
+  <div class="m1 i">Monday</div>
+  <div class="m2 i">English</div>
+  <div class="m3 i">Biology</div>
+  <div class="m4 i">Physics</div>
+  <div class="m5 i">Chemistry</div>
+  <div  align="center" class="m6 i">
+    <p>L</p>
+    <P>U</P>
+    <p>N</p>
+    <p>C</p>
+    <p>H</p>
+
+    Break
+</div>
+  <div class="m7 i">Chemistry Lab</div>
+   
+   <div class="t1 i">Tusday</div>
+  <div class="t2 i">Biology Lab</div>
+  <div class="t3 i">Physics</div>
+  <div class="t4 i">Chemistry</div>
+  <div class="t5 i">English</div>
+  <div class="t6 i">Biology</div>
+ 
+   <div class="w1 i">Wednesday</div>
+  <div class="w2 i">English</div>
+  <div class="w3 i">Biology</div>
+  <div class="w4 i">physics</div>
+  <div class="w5 i">Chemistry</div>
+  <div class="w6 i">Games</div>
+
+  <div class="th1 i">Thursday</div>
+  <div class="th2 i">Biology Lab</div>
+  <div class="th3 i">physics</div>
+  <div class="th4 i">Chemistry</div>
+  <div class="th5 i">English</div>
+  <div class="th6 i">Biology</div>
+
+
+  <div class="f1 i">Friday</div> 
+  <div class="f2 i">Biology</div>
+  <div class="f3 i">physics</div>
+  <div class="f4 i">English</div>
+  <div class="f5 i">Chemistry</div>
+  <div class="f6 i">physics Lab</div>
+
+  <div class="sat1 i">Saturday</div>
+  <div class="sat2 i">Biology Lab</div>
+  <div class="sat3 i">physics</div>
+  <div class="sat4 i ">Chemistry</div>
+  <div class="sat5 i">LET OFF</div>
+  
+
+
+  
+</div>
+
+
+  
+
+
+</body>
+</html>
+

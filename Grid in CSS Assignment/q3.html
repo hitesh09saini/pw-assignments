@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box
+        {
+           
+            display: grid;
+            grid-template-columns: repeat(2 ,auto);
+
+        }
+
+        .cont{
+            
+            
+            padding-top: 200px;
+           
+            padding-left: 70px;
+            width: 95%;
+        }
+        .y{
+            /* margin-left: 30%; */
+            width: 100%;
+            background-color: yellow;
+            display: flex;
+            
+        }
+        h1{
+            padding-bottom: 30px;
+        }
+
+
+        button{
+            margin-top: 60px;
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            border: none;
+        }
+        .side
+        {
+            width: 200px;
+        }
+
+        nav{
+            padding: 5px;
+            width: 100%;
+            height: 50px;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #but{
+           
+            /* text-align: center; */
+            background-color: rgb(78, 190, 78);
+            height: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            width: 120px;
+        }
+
+       span{
+        padding-left: 40px;
+       }
+
+       .box1{
+        background-color: rgb(27, 20, 3);
+        display: grid;
+        grid-template-columns: repeat(3 ,auto);
+         margin-top: 15px;
+         margin-left: 10px;
+         height: fit-content;
+        padding-bottom: 20px;
+       }
+
+       .itms{
+      
+         text-align: center;
+         color: #fff;
+         padding-left: 40px;
+         padding-right: 40px;
+         
+       }
+
+       .itms h2, p{
+         padding-top: 40px;
+       }
+
+       .itms p{
+         color: burlywood;
+       }
+
+
+       
+    </style>
+
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <img width="60px" src="data:image/png;base64,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" alt="">
+        <div id="list">
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+        </div>
+        <span id="but">Login</span>
+    </nav>
+
+    <!-- hero section -->
+    <div class="box">
+    <div class="cont" id="cont">
+
+        <h1>Healthy Food</h1>
+        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, repudiandae. Facere blanditiis perspiciatis vel eveniet delectus corrupti ab deserunt. Sit porro tempora alias veritatis ipsam, explicabo corrupti? Repellendus, sit porro! amet consectetur adipisicing elit. Sed, eum natus. Delectus nulla id necessitatibus, minima porro laborum quaerat earum maiores neque ad et itaque cumque molestias animi ipsum unde.</p>
+        <button>Read More</button>
+    </div>
+   
+    <div class="y" id="y">
+        <img width="370px" src="https://image.lexica.art/full_jpg/d3a2a0de-4105-437f-ae50-195aad388764" alt="veg">
+    
+        <div class="side">
+
+        </div>
+    </div>
+   </div>
+    <!-- existing features -->
+
+    <div class="box1">
+
+        <div class="itms">
+            <img width="130px" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" alt="">
+            <h2>No Minimum Order</h2>
+            <p>Order in for yourself or for the group,
+                with no restrictions on order value</p>
+        </div>
+        <div class="itms">
+            <img width="130px" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy" alt="">
+            <h2>Live Order Tracking</h2>
+            <p>Know where your order is at all times,
+                from the restaurant to your doorstep</p>
+        </div>
+        <div class="itms">
+            <img width="130px" style="margin-top: 40px;" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn" alt="">
+            <h2>Lightning-Fast Delivery</h2>
+            <p>Experience Swiggy's superfast delivery
+                for food delivered fresh & on time</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
