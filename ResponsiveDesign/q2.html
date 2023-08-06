@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+
+     nav{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 10px;
+        color: #fff;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(2, 2, 2);
+     }
+      
+     span{
+        padding: 8px;
+        
+     }
+
+     button{
+        border-radius: 5px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+        width: 150px;
+        border: none;
+        color: #fff;
+        text-align: center;
+        
+        background-color: rgb(19, 91, 248);
+     }
+
+     div{
+        padding-top: 10px;
+     }
+
+     #i{
+        display: none;
+     }
+
+     .features{
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+     }
+     .features img{
+        width: 500px;
+     }
+     @media screen and (max-width: 700px) {
+        div{
+            display:none;
+        }
+        button{
+            display:none;
+        }
+
+        #i{
+            display: block;
+        }
+
+        .features{
+            flex-direction: column;
+            gap: 40px;
+            
+        }
+
+        
+     }
+
+     
+     
+    </style>
+    <script src="https://kit.fontawesome.com/b94ee17cb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img width="40px" style="padding-left: 10px;" src="logo-removebg-preview.jpg" alt="">
+        <div>
+            <span>Home</span>
+            <span>Blog</span>
+            <span>About</span>
+            <span>Contact</span>
+        </div>
+        <button>
+            Login
+        </button>
+        <span id="i">
+        <i class="fa-solid fa-bars fa-xl" style="color: #f5f7fa;"></i>
+        </span>
+    </nav>
+
+      <!-- features -->
+
+      <div class="features">
+
+        <img src="onecard-768x483.png" alt="">
+        <img src="pic.png" alt="">
+      </div>
+    
+</body>
+</html>
