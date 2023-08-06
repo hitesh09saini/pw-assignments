@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .box{
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px -5px black;
+            background-color: #fff;
+            
+            width: 50%;
+        }
+        h1{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+       
+
+        .but{
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            margin-top: 30px;
+            border-radius: 5px;
+            background-color: rgb(0, 0, 0);
+        }
+        select{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>Signup</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="b">Batch:</label>
+         <select name="" id="b">
+            <option value="v">Sigma 2.0</option>
+         </select>
+        <br>
+        <label for="a">Age:</label>
+        <input type="number" id="a">
+        <br>
+        <label for="e">Email:</label>
+        <input type="email" id="e">
+        <br>
+        <label for="pass">Password:</label>
+        <input type="number" id="pass">
+
+        <div class="but">Signup</div>
+    </div>
+</body>
+</html>
