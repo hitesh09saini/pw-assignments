@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+           height: 100vh;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           border: 5px solid black;
+        }
+
+        .but{
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            color: #fff;
+            border-radius: 10px;
+            background: linear-gradient(to right,rgb(77, 77, 240),rgb(1, 1, 139));
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .but{
+            
+            animation: move 1s infinite ;
+        }
+        
+
+        @keyframes move{
+
+            0%{
+              transform: rotate(10deg);
+            }
+            25%{
+                transform: rotate(0deg);
+            }
+            70%{
+                transform: rotate(-10deg);
+            }
+            100%{
+              transform: rotate(10deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+   <a href="https://pwskills.com/"> <div class="but">Click Me To Visit PW Skills</div></a>
+</body>
+</html>

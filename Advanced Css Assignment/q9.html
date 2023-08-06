@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+           height: 100vh;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           border: 5px solid black;
+           color: #948f8f;
+        }
+
+        p{
+            margin: 10px;
+        }
+
+        .box{
+            background-color: #000;
+            width: 400px;
+            display: flex;
+            border-radius: 10px;
+            flex-direction: column;
+            padding: 5px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1{
+            color: #fff;
+            padding-bottom: 20px;
+        }
+
+        #scroll{
+            height: 200px;
+            overflow-y: scroll;
+            
+        }
+        ::-webkit-scrollbar{
+             width: 5px;
+             background-color: #000;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #948f8f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABgFBMVEUAAAD2gh/fOj5hvEWWPZf8uCcAnd7/tyn7uSWUPpb1gyHdNj2TPpuYOpfxZynhOzukOoV+TqNXvEjKuDIAn90AAAUJAAAAAAcAnd9jwUZiu0YABABnwUubQpkLAABVjURqvlPHuzKeQKEpPypBaDVWhz1bm0IxQS05VzNgw0MfKRpDdjhmuUhMgDpjvVBgsVFHb0BCXzU1TC4JEQlhoFdjp1BdkEsiLx47VDdGczxapUpktFAqQSVMf0IcIhsiNxwiLRgyWSdAZy0NGA8iKyJfyD92Yi2ywjkOBRPztzRtTiGnhDtMQR4gHRP2tTmlfyrfqDjRmTlMOR8XEBd8YiS4lTgzLh2KcS4wJiDeoDTqhjWXWSZ2SCNTMho9KR1DKRS1cyvNcyonHByKSCyeSTFkJys4FxqKMC/aRE26PUDBQUJRIyXTQj+kNTWURH43Hy9fMGF7QoMtGDJKKEclGiIVjb8Xd6IOKj0aXn4ZaH4XOkMcQ1wbf6EicJsUJCsTPVT0YWTcAAAHo0lEQVR4nO2di1cTRxTGhyyPJELT2p3dnd0NCUIpwSQawkPyQK3WQlurldJaW1+0aFUoUN3wVP/1zmwAk+xuRJjJJMP8jufIY9kz9+O7d+7MTgIAEolEIpFIJBKJRCKRSCQSiUTCCQtA8p/OexydAFFqeOSr0a+rmkmaMpZIoxSyR6RYTbEAGM8U7ZSCQRd5j6bdGU8kUVpxQRneg2ljLJx0mayNFHQklkzDIHQwfAmZyhFoVooVzGWbSPRBrJwUK5CErdRipiakWAHkJ2tTkIiVzEut/JmfStVrpShFaSw/8Dw4lWqQSkHTvIfVrkzjtGsUK8d7UG3KiN3oK0VJyiT0AYKZNPJohRK8x9WmTHm0MpE9wXtU7UnOU9wxBTkX+qGnG2s7JnWF97Dak1lvwVKUKd6jakdwi5X0Ecsu8R5YWwJzHq1QGk+FsmJ50UHB6ytTrnT8GU97xUrKJPTHk4Vp0x7hPah2JeFpGlJl+cQwgGJ9tTLNbAbIiuVPvr5k4WWO3HkP5KZdr1UyB6BMwgBKtRsOaVSY4T2gdmbCrnmck7zsPpM+20Bd9/0YUzp8TIGQnciDgxy0NACPKpeun7W81Oeulkqlq3ONcc/YabKjbNrF8lz9d25cK/n+hLhAklU3rmcKRdtG2DzJYiHxDalL1sEZrHzWRnaxUC65nx3U9rkrmali2nbJFguZ6zdA9em+0BCpcpNZVNulI2ROZYg21eo0NjZ8ZB5X2psXC4pd19YjlJwkTy8swetZvpxEZuPenqkgO5sZdi+AoK4FtUYKdiprNi6BTKxXOc8nhFYxj6XyPOI6CD9lX5q9Ri7SrcNjkdZYIpnC0iIz67kcfzVZ1gXuV3NFvz3QmuyypzLXxw8unhlJJJHfZnzN9cUxrvEwAmK7LI4ixZOBDW5RUna6WBgdHS0UycEsM8CGH/QaXQSWLpq9IJjw2y0OsszxL02WhEtFHcyij5jkhJhoVrgNnLKtHNstnwRS7LJQPZcOEp7zQ/QwUwlxvIV/6dM2O62wWrYwxyDwArjscyaGKjgTxZgSIRg5/uR2Qs7jKi8EcMLTftMljRs0NClGA5FPstVKQelUMSfEMw0djJ5ni5L9dloTQSrMraEvKTHke6ehoe8u846REnB+oaeRvhPjuRUmvPC9IF0WBD+EfeI7KT636lv4sWZ3vrO57WcGimCtRHmqiI3V42MHeoTDtwTJQcz8TyylwmLdESQDCbeY+qqn564Yi5wqP7NNwoV7gvRXhMWw72xPTaw7vAOkyS+MjfVGmOKOWWKpVU94SZyZEFeTBbbO+lWgiqXfZqlVX/gu7wApAtk2DuG+33hHSBEdrwuZcp93hBTR4dIpNhg+vgNxV5jqDkga/s4wC3v6lngHSBMIHnRFuxgRjUb/4B0gVfQoS7G6/uQdH1XuM5PK5aFINQs8YipW9LFQYt1jK9YjocR6yFgs3vFRhbFYj3nHR5WHLLXCBZ53fDSBjMUSqnXQH7NNQ7Ga0vssterqesI7PqpYbJvSB+Ls/JETfw9YahUVrHdgKpZYFd6CT5lqFX3KO0KK6OBJl7uXwgZ852VRzoQQ/vqMLX+L9Prpldg5pqwKpBV4FjsXYknsOe8IqQE18A9TrUKh1UXeQVLkBVtnhUJrvCOkyHPGWoViK7xDpMcKc7FWl4WZEZdZixWKvYRQELX0l4yLVkyksvWcdYXHvBBl9+EVe62wtwTJQ7jK3lrnYi+fkXdB6nzWGDfxLrHQigBzokWWh+zFwnK9WOYdKwWsFuShq1ZsbbnzX5+5FmuJWCH8O1l7xTvY0/Iq1iKIuXgHe0og+PfzlrHOO9pTs9EfCaSfFu6tNkGH9w8QLEa6B7rZ0x/pXu/4Ag/A5kArxOoeiAigFfgv3hKxul8L8UqezQstkCoS5x0mHdbjLRAr/pp3mFSA2FoRxlJFLmzyDpMW63HmYvW/FqG8u7CvWpudvzA85A1zsd7wDpEiG2y7h4EN3gHSAwI9zrCNx6sdgd5NEgeywTARIxfWxalYLpt48Ra8oj4FOAmFaRsOWY8PxAdYgJ0l0vEQggY2vmBF529jeXEMlQW9Fd6BMUDbUnvVXvo4Hb7jF8B2r2FQVspQja1O3x/1Q9M1R6UulrEjWNdQBWpAc+h6C/tqX5R3KPWyqxo0y5ZqOPO8Q2KGNrhNNxHVLWF9Rf7i147a3FzqsZ2Hb6PuCfMWpX5o2r7R1FzqsdVSDWNb6/yzM83QBitqbxO1DsQyyERgNOnL8AWqmBNhHVqlWXOKNXATzFW02qH7i9qr7gjYXzWigbfBzsI5qjpOZb9SqTi4KzMCxcK+EjwHq2ganhMbCxf+nHjK2d6FWtUxuC17t1dR3UvrLlbJ19T3mugpWEXX3juNUyLxkLP9rnHpog3uOY3zJxHLWTwDOehi6WBwH/uF/CO2MdwPnD0Sf/0TeGhBMLhbcb/fS7ynVluG7bMiVRVta59Ub4NIRpzzdis4fu3dtkMyj0yRWC71rWibfR9Bx/mW36mQSQ17ah+bSgs+1aFhdrFeBKeyNzioCXA2+ROwQLU+a4v5atxN4z/405D44uqlEolEIpFIJBKJRCKRSCQSiUQi4cj/RQ9sl+4DGnEAAAAASUVORK5CYII=" alt="">
+        <h1>Apple Inc</h1>
+        <div id="scroll">
+        <p>Lorem ipsum   consectetur adipisicing elit. Eaque doloremque sapiente quidem voluptas impedit possimus maiores nemo repudiandae sint modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab ut natus? Eaque ab animi quidem? Velit optio in numquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis ad, obcaecati dolores iste cupiditate impedit aliquam nemo maxime dolor?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis doloribus possimus hic eveniet eum autem id sit, eligendi natus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem magnam quae dicta illo minus est deleniti. Possimus enim doloremque rem.</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
