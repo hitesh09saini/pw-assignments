@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn">Logout</button>
+        <h2 id="status">User status: Not logged in</h2>
+    </div>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginBtn = document.getElementById("loginBtn");
+            const logoutBtn = document.getElementById("logoutBtn");
+            const statusHeading = document.getElementById("status");
+
+            loginBtn.addEventListener("click", function () {
+                localStorage.setItem("isLoggedIn", "true");
+                updateStatus();
+            });
+
+            logoutBtn.addEventListener("click", function () {
+                localStorage.removeItem("isLoggedIn");
+                updateStatus();
+            });
+
+            function updateStatus() {
+                const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+                if (isLoggedIn) {
+                    statusHeading.textContent = "User status: Logged in";
+                } else {
+                    statusHeading.textContent = "User status: Not logged in";
+                }
+            }
+
+            // Initial status update on page load
+            updateStatus();
+        });
+
+    </script>
+</body>
+
+</html>

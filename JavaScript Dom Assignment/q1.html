@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img{
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+       }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Update Profile Picture</h1>
+
+    <input type="file" name="" id="dp" placeholder="Choose File">
+
+    <h3>Your Profile Picture</h3>
+
+    <div id="picture">
+    
+        
+    </div>
+    
+    <!-- JavaScript code -->
+    <script>
+
+       document.getElementById('dp').addEventListener('change',()=>{
+        var tmppath = URL.createObjectURL(event.target.files[0]);
+        document.getElementById('picture').innerHTML = ` <img src="${tmppath}" alt="">`;
+      }
+      )
+     
+      
+    </script>
+</body>
+</html>

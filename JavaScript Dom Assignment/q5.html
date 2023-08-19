@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="h1">Your Image is visible</h1>
+
+    <div style="margin-bottom: 20px;">
+    <button onclick="on()" id="but">Toggle Image</button>
+    </div>
+    <img width="500px" id="img" src="https://image.lexica.art/full_jpg/52b4560e-0791-4d9b-95c8-6acfc1ae9781" alt="">
+
+    <script>
+
+      function on(){
+        let img = document.getElementById('img');
+        img.classList.toggle('hidden');
+        if(document.getElementById('h1').innerText === 'Your Image is visible' ){
+        document.getElementById('h1').innerText="Your Image is hidden";
+        }else{
+        document.getElementById('h1').innerText ='Your Image is visible' 
+       }
+    
+    }
+ 
+    </script>
+    
+</body>
+</html>

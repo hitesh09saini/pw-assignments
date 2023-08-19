@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <h1 style="text-align: center;">Counter</h1>
+    <div  style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+    <button id="inc" style="border: 0px ; color: #fff; font-size: 2rem; height: 40px; text-align: center;   width: 100px; background-color: green;">+</button> <h1 id="output" style="text-align: center; width: 100px; border: 1px solid black;"  >0</h1>   <button id="dic" style="border: 0px ; color: #fff; font-size: 2rem; height: 40px; text-align: center;   width: 100px; background-color: red;">-</button> 
+    </div>
+    <script>
+        let inc = document.getElementById('inc');
+        let dec = document.getElementById('dic');
+        let output = document.getElementById('output');
+
+        inc.addEventListener('click',()=>{
+            output.innerText = Number(output.innerText)+1;
+        })
+
+        dec.addEventListener('click',()=>{
+            if(output.innerText === "0")alert('counter is going beyond 0.');
+            output.innerText = Number(output.innerText)-1;
+        })
+    </script>
+</body>
+</html>
