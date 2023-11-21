@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/output.css">
+    <style>
+        td {
+            padding-right: 30px;
+        }
+
+        html {
+            user-select: none;
+
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#2F0B51] text-white flex justify-center items-center h-screen">
+
+    <div class="p-5  flex flex-col gap-3 border border-gray-400 rounded-xl ">
+
+        <h1 class="text-center text-2xl ">Password Generator</h1>
+
+        <input type="text" id="text"  class="p-1 rounded text-black outline-none" readonly placeholder="Click on Generate Button">
+
+        <div class="flex justify-between">
+            <button class="bg-blue-600 p-2 rounded hover:bg-blue-400" onclick="generate()">Generate</button>
+            <button class="bg-blue-600 p-2 rounded  hover:bg-blue-400" onclick="copy()">Copy To ClipBoard</button>
+        </div>
+
+        <table>
+            <tr>
+                <td>Password length</td>
+                <td><input type="number" id="length" min="0" max="99" value="8"
+                        class="w-[40px] p-1 rounded text-black outline-none"></td>
+            </tr>
+            <tr>
+                <td>Include uppercase letters</td>
+                <td><input type="checkbox" id="upperletters"></td>
+            </tr>
+            <tr>
+                <td>Include lowercase letters</td>
+                <td><input checked type="checkbox" id="lowerletters"></td>
+            </tr>
+            <tr>
+                <td>Include numbers</td>
+                <td><input type="checkbox" id="numbers"></td>
+            </tr>
+            <tr>
+                <td>Include special characters</td>
+                <td><input type="checkbox" id="symbols"></td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
