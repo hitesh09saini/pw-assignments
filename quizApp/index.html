@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="bg-gray-600 text-white p-2">
+        <h1 class="text-3xl text-center ">Quiz App</h1>
+
+        <div class="flex justify-between p-4">
+            <div>Question <span id="qn"></span>/<span id="tq"></span></div>
+            <div>Score: <span id="score"></span></div>
+        </div>
+    </div>
+
+    <!-- body -->
+
+    <div  class="flex flex-col items-center gap-9">
+        <div id="Q-body" class="w-11/12  mt-5"> </div>
+
+        <div id="btns">
+            <Button id="btn" onclick="next()" class="text-white hover:bg-gray-400 m-5 bg-gray-600 p-3">Next</Button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

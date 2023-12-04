@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .w-11/12 {
+            width: 92%;
+        }
+
+        .mt-5 {
+            margin-top: 1.25rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .selecter {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .rounded {
+            border-radius: 0.25rem;
+        }
+
+        .m-3 {
+            margin: 0.75rem;
+        }
+
+        .p-2 {
+            padding: 0.5rem;
+        }
+
+        .correct {
+            border: 2px solid green;
+        }
+    </style>
+    <title>Quiz App</title>
+</head>
+<body>
+
+<div class="w-11/12 mt-5">
+    <p class="text-xl">Q1. What is 2+1?</p>
+    <div class="selecter">
+        <div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">3</div>
+        <div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">6</div>
+        <div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">9</div>
+        <div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">22</div>
+    </div>
+</div>
+
+<script>
+    function check(selectedOption) {
+        // Reset border for all options
+        const options = document.querySelectorAll('.selecter .shadow');
+        options.forEach((opt) => {
+            opt.classList.remove('correct');
+        });
+
+        // Check if the selected option is correct (assuming the correct answer is '3')
+        const isCorrect = selectedOption.textContent.trim() === '3';
+
+        // If correct, add a green border
+        if (isCorrect) {
+            selectedOption.classList.add('correct');
+        }
+    }
+</script>
+
+</body>
+</html>
