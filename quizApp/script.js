@@ -75,7 +75,7 @@ function check(selectedOption) {
     
     const options = document.querySelectorAll('.selecter .shadow');
     options.forEach((opt) => {
-        opt.classList.remove('border-green-600');
+        opt.classList.remove('correct');
     });
 
     let v = parseInt(qn.innerText) - 1;
@@ -83,6 +83,6 @@ function check(selectedOption) {
     if (isCorrect) {
 
         score.innerText = parseInt(score.innerText) + 1;
-        selectedOption.classList.add('border-green-600');
+        selectedOption.classList.add('correct');
     }
 }
