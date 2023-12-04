@@ -16,8 +16,6 @@ const q = [
     '<div class="w-11/12 mt-5"><p class="text-xl">Q10. What is 2+10 ?</p><div class="selecter"><div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">4</div><div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">6</div><div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">9</div><div onclick="check(this)" class="shadow border border-2 rounded m-3 p-2">12</div></div></div>'
 ]
 
-
-
 const ans = [
     3,
     4,
